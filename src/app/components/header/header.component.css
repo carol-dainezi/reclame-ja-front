@@ -1,0 +1,84 @@
+nav {
+  align-items: center;
+  border-bottom: 2px solid rgb(225, 227, 229);
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 6rem;
+}
+
+#login-button {
+  align-items: center;
+  background-color: rgb(2, 121, 62);
+  border-color: rgb(2, 121, 62);
+  border-radius: 6px;
+  border-style: solid;
+  color: white;
+  display: flex;
+  font-size: 14px;
+  font-weight: 550;
+  padding: 0.5rem;
+}
+
+#login-button:hover {
+  background-color: white;
+  color: rgb(2, 121, 62);
+  cursor: pointer;
+}
+
+#login-button:hover .svg-icon {
+  color: rgb(2, 121, 62);
+}
+
+.svg-icon {
+  color: white;
+  fill: currentColor;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  overflow: hidden;
+  width: 1.5rem;
+}
+
+.svg-logo {
+  width: 170px;
+  height: 27px;
+}
+
+.search-box {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-search {
+  background: transparent;
+  background-color: rgb(249, 249, 249);
+  border: none;
+  border-radius: 3px;
+  display: flex;
+  font-size: 14px;
+  height: 40px;
+  width: 100%;
+  padding: 0px 8px;
+  outline: none;
+}
+
+#header-search:focus {
+  box-shadow: 0px 1px 3px gray;
+}
+
+#header-search::placeholder {
+  color: rgb(169, 176, 181);
+}
+
+#search-button {
+  height: 1.5rem;
+  fill: rgb(169, 176, 181);
+  left: 75%;
+  position: absolute;
+}
+
+#search-button:hover {
+  cursor: pointer;
+}
