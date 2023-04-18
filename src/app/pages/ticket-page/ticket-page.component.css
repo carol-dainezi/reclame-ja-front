@@ -1,0 +1,342 @@
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.ticket-content {
+  width: 50%;
+  min-height: 50vh;
+}
+
+.ticket-status {
+  border-radius: 8px;
+  position: relative;
+  width: 6rem;
+  text-align: center;
+  top: 2rem;
+}
+
+.ticket-status span {
+  bottom: 0;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+}
+
+.status-image {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 8px;
+  left: 50%;
+  position: absolute;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  width: 4rem;
+}
+
+.company-side {
+  border: 1px solid rgb(225, 227, 229);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 16px;
+  text-align: center;
+  width: 25%;
+  height: max-content;
+}
+
+.ticket-answers {
+  margin: 4rem 0 2rem 0;
+  width: 100%;
+}
+
+.ticket-answer-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.ticket-answer {
+  border: 1px solid rgb(225, 227, 229);
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1.5rem;
+  min-width: 0px;
+  padding: 2rem;
+  width: 100%;
+  word-break: break-word;
+}
+
+.ticket-answer h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.answer-rate {
+  border: 1px solid rgb(225, 227, 229);
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.answer-rate h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.answer-rate label {
+  color: rgb(75, 89, 99);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 0.5rem;
+  word-break: break-word;
+}
+
+.answer-rate textarea {
+  align-self: center;
+  border: 1px solid rgb(225, 227, 229);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  height: 8rem;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 16px;
+  resize: none;
+  width: 100%;
+}
+
+.answer-rate textarea::placeholder {
+  color: rgb(169, 176, 181);
+}
+
+.rate-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+}
+
+.rate-buttons button {
+  align-items: center;
+  border: none;
+  border-radius: 1rem;
+  color: rgb(255, 255, 255);
+  display: flex;
+  height: 3rem;
+  padding: 1rem;
+  transition: background 0.2s ease 0s;
+  vertical-align: middle;
+}
+
+.rate-buttons button:hover {
+  cursor: pointer;
+}
+
+.rate-buttons button svg {
+  fill: rgb(255, 255, 255);
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.submit-button {
+  height: fit-content;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.submit-button button {
+  background: rgb(143, 180, 20);
+  border: 0px;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  height: 3rem;
+  margin-top: 1rem;
+  outline: none;
+  padding: 0px 16px;
+  text-decoration: none;
+  transition: background 0.2s ease 0s;
+}
+
+.submit-button button:hover {
+  background: rgb(110, 139, 15);
+}
+
+#rate-resolved {
+  background: rgb(2, 121, 62);
+}
+
+#rate-resolved:hover {
+  background: rgb(1, 95, 48);
+}
+
+#rate-not-resolved {
+  background: rgb(135, 74, 159);
+}
+
+#rate-not-resolved:hover {
+  background: rgb(111, 61, 131);
+}
+
+a {
+  margin-top: 1rem;
+}
+
+h2 {
+  color: rgb(75, 89, 99);
+  font-size: 36px;
+  font-weight: bold;
+  word-break: break-word;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(75, 89, 99);
+}
+
+p {
+  color: rgb(75, 89, 99);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  word-break: break-word;
+}
+
+#ticket-date-time {
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+#ticket-date-time svg {
+  fill: rgb(75, 89, 99);
+  height: auto;
+  margin-right: 4px;
+  width: 16px;
+}
+
+#ticket-reason {
+  align-items: center;
+  background: rgba(207, 216, 244, 0.3);
+  border-radius: 20px;
+  color: rgb(31, 105, 193);
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 600;
+  height: 28px;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 0px 8px;
+  transition: all 0.3s ease 0s;
+}
+
+#ticket-reason:hover {
+  background: rgb(226, 232, 248);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#company-answer {
+  background-color: rgb(248, 249, 255);
+}
+
+#client-answer {
+  background-color: rgb(255, 255, 255);
+}
+
+/* NOT ANSWERED */
+#status-not-answered {
+  background-color: rgb(249, 205, 205);
+  color: rgb(215, 37, 44);
+  height: 5rem;
+}
+
+#status-not-answered span {
+  transform: translate(-50%, -20%);
+}
+
+#image-not-answered {
+  background-color: rgb(249, 205, 205);
+  border-color: rgb(249, 205, 205);
+}
+
+/* ANSWERED */
+#status-answered {
+  background-color: rgb(207, 216, 244);
+  color: rgb(31, 105, 193);
+  height: 4rem;
+}
+
+#status-answered span {
+  transform: translate(-50%, -50%);
+}
+
+#image-answered {
+  background-color: rgb(207, 216, 244);
+  border-color: rgb(207, 216, 244);
+}
+
+/* CONSUMER ANSWERED */
+#status-consumer-answered {
+  background-color: rgb(255, 239, 197);
+  color: rgb(210, 133, 6);
+  height: 4rem;
+}
+
+#status-consumer-answered span {
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+#image-consumer-answered {
+  background-color: rgb(255, 239, 197);
+  border-color: rgb(255, 239, 197);
+}
+
+/* RESOLVED */
+#status-resolved {
+  background-color: rgb(222, 240, 210);
+  color: rgb(84, 109, 0);
+  height: 4rem;
+}
+
+#status-resolved span {
+  transform: translate(-50%, -50%);
+}
+
+#image-resolved {
+  background-color: rgb(222, 240, 210);
+  border-color: rgb(222, 240, 210);
+}
+
+/* UNRESOLVED */
+#status-unresolved {
+  background-color: rgb(225, 210, 231);
+  color: rgb(135, 74, 159);
+  height: 5rem;
+}
+
+#status-unresolved span {
+  transform: translate(-50%, -20%);
+}
+
+#image-unresolved {
+  background-color: rgb(225, 210, 231);
+  border-color: rgb(225, 210, 231);
+}

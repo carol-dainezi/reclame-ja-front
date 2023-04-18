@@ -1,12 +1,22 @@
 <div class="main-content">
   <h2>
-    O Reclame AQUI te aproxima das marcas que têm a confiança do consumidor!
+    O Reclame JÁ te aproxima das marcas que têm a confiança do consumidor!
   </h2>
   <p>
     Compre de modo mais seguro, pesquisando empresas e buscando uma solução para
     algum problema.
   </p>
-  <div class="company" *ngFor="let company of companies">
-    <h2>{{company.name}}</h2>
+  <div class="companies">
+    <img src="assets/home-search-left.png" />
+    <div class="company-list">
+      <h2>Veja as principais empresas</h2>
+      <div class="company" *ngFor="let company of companies">
+        <a routerLink="empresa/{{ company.id }}">
+          <h3>{{ company.name }}</h3>
+          <p>CNPJ: {{ company.cnpj }}</p></a
+        >
+      </div>
+    </div>
+    <img src="assets/home-search-right-2fc140b1fedcafdc20bf466c9e921b9e.png" />
   </div>
 </div>

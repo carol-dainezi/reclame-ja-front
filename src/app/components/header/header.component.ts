@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Company } from 'src/app/interfaces/company';
+import { CompanyService } from 'src/app/services/company.service';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  constructor() {}
+  term!: string;
+
+  companySearch: Company[] = [];
+
+  search() {
+    this.companyService.searchCompany(this.term).subscribe((items) => {
+      this.companySearch = items;
+    });
+  }
+
+  constructor(private companyService: CompanyService) {}
 }

@@ -22,5 +22,11 @@ export class CompanyService {
     return this.http.get<Company[]>(this.apiUrl);
   }
 
+  getCompany(id: Number): Observable<Company> {
+    const url = `${this.apiUrl}/${id}`;
+
+    return this.http.get<Company>(url);
+  }
+
   constructor(private http: HttpClient) {}
 }

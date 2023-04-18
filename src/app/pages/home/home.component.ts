@@ -15,6 +15,7 @@ export class HomeComponent {
   ngOnInit() {
     this.companyService.findAllCompanies().subscribe((items) => {
       this.companies = items;
+      console.log(items);
     });
   }
 }

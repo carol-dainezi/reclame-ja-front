@@ -1,6 +1,6 @@
 <header>
   <nav>
-    <a routerLink="/">
+    <a routerLink="">
       <svg
         class="svg-logo"
         viewBox="0 0 217.114 41"
@@ -40,7 +40,8 @@
       <input
         type="text"
         id="header-search"
-        formControlName="term"
+        [(ngModel)]="term"
+        (change)="search()"
         placeholder="Pesquise por nome, cnpj ou site da empresa"
       />
       <svg
@@ -71,3 +72,11 @@
     </button>
   </nav>
 </header>
+<div class="company-results">
+  <div class="company" *ngFor="let company of companySearch">
+    <a routerLink="empresa/{{ company.id }}">
+      <h2>{{ company.name }}</h2>
+      <p>CNPJ: {{ company.cnpj }}</p>
+    </a>
+  </div>
+</div>

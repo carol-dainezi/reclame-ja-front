@@ -51,6 +51,21 @@ nav {
   align-items: center;
 }
 
+.company-results {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: auto;
+  width: 100%;
+}
+
+.company {
+  background: rgb(249, 249, 249);
+  width: auto;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 0 1rem;
+}
+
 #header-search {
   background: transparent;
   background-color: rgb(249, 249, 249);

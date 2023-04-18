@@ -1,0 +1,53 @@
+<body>
+  <div class="company-header">
+    <img
+      src="assets/companypageconfiguration_60afd576-4f0c-4cc2-9fee-8862dceca00a.jpg"
+    />
+    <div>
+      <a routerLink="/empresa/{{ company.id }}"
+        ><h2>{{ company.name }}</h2></a
+      >
+      <p style="margin: 0">CNPJ: {{ company.cnpj }}</p>
+    </div>
+    <p>Poste uma reclamação sobre esta empresa e seja ouvido!</p>
+  </div>
+  <form (ngSubmit)="submit()" [formGroup]="ticketForm" #formDir="ngForm">
+    <h1>Vamos começar. <span>Conte a sua história</span></h1>
+    <p>Descreva o seu problema com a empresa.</p>
+    <label for="title">Título da história</label>
+    <input
+      type="text"
+      id="title"
+      formControlName="title"
+      placeholder="Resuma em poucas palavras o seu problema"
+      required
+    />
+    <label for="reason">Classifique sua história</label>
+    <input
+      type="text"
+      id="reason"
+      formControlName="reason"
+      placeholder="Insira aqui a categoria do seu problema"
+      required
+    />
+    <label for="content">Conte a sua história</label>
+    <textarea
+      id="content"
+      formControlName="content"
+      placeholder="Escreva aqui o seu problema..."
+      required
+    ></textarea>
+    <label for="client">Seu CPF</label>
+    <input
+      type="text"
+      id="client"
+      formControlName="client"
+      placeholder="Insira somente números"
+      required
+    />
+    <span id="reminder"
+      >Fique tranquilo, só a empresa poderá ver suas informações.</span
+    >
+    <button type="submit">Enviar reclamação</button>
+  </form>
+</body>

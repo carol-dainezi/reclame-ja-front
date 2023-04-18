@@ -1,0 +1,136 @@
+.company-header {
+  width: 97%;
+  display: flex;
+  margin: 0 auto;
+  background: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.company-header img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 1px solid rgb(225, 227, 229);
+  padding: 3px;
+  margin-right: 2rem;
+}
+
+.company-header p {
+  color: rgb(75, 89, 99);
+  margin-left: auto;
+  margin: auto 0 auto auto;
+  align-self: flex-end;
+}
+
+#reminder {
+  background-color: rgba(31, 105, 193, 0.08);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 30px;
+  color: rgb(31, 105, 193);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 16px;
+}
+
+#cpf {
+  align-self: baseline;
+  width: 50%;
+}
+
+body {
+  background-color: rgb(234, 237, 240);
+  overflow: hidden;
+}
+
+form {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  color: rgb(75, 89, 99);
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto;
+  padding: 3rem;
+  width: 60%;
+}
+
+input,
+textarea {
+  align-self: center;
+  border: 1px solid rgb(225, 227, 229);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 16px;
+  width: 100%;
+}
+
+textarea {
+  height: 15rem;
+  resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(169, 176, 181);
+}
+
+button {
+  align-self: center;
+  background: rgb(143, 180, 20);
+  border: 0px;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  height: 4rem;
+  margin-top: 2rem;
+  outline: none;
+  padding: 0px 16px;
+  text-decoration: none;
+  transition: background 0.2s ease 0s;
+  width: 40%;
+}
+
+button:hover {
+  background: rgb(110, 139, 15);
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h1 span {
+  font-weight: bold;
+  color: rgb(143, 180, 20);
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+a {
+  color: black;
+}
+
+label {
+  color: rgb(0, 0, 0);
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
